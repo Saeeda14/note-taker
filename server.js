@@ -21,3 +21,15 @@ app.get('/', (req, res) => {
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname, '/public/notes.html'));
 });
+
+// API Routes 
+
+// read and return all saved notes as JSON 
+app.get('/api/notes', (req, res) => {
+    fs.readFile('db/db.json', 'utf8', (err, data) => {
+        if (err) throw err; 
+        const notes = JSON.parse(data);
+        res.json(notes);
+    });
+});
+
