@@ -14,12 +14,12 @@ app.use(express.static('public'));
 
 // Route for the homepage 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/index.html')); 
+    res.sendFile(path.join(__dirname, './Develop/public/index.html')); 
 }); 
 
 // Route for the notes page 
 app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/notes.html'));
+    res.sendFile(path.join(__dirname, './Develop/public/notes.html'));
 });
 
 // API Routes 
