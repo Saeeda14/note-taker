@@ -5,6 +5,7 @@ The Note Taker application is a simple web-based tool that allows users to creat
 
 
 # Usage
+<br>
 1. Start the application by running: node server.js
  <br>
 2. Open your web browser and go to http://localhost:3000 to access the Note Taker application.
