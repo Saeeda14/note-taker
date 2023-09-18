@@ -4,17 +4,18 @@
 The Note Taker application is a simple web-based tool that allows users to create, save, view, and delete notes. It provides an easy way to keep track of important information and tasks.
 
 
-# Usage 
-Start the application by running: node server.js
+# Usage
+<br>
+1. Start the application by running: node server.js
  <br>
-Open your web browser and go to http://localhost:3000 to access the Note Taker application.
+2. Open your web browser and go to http://localhost:3000 to access the Note Taker application.
 <br>
-You'll land on the homepage with a link to the notes page. Click on "Notes" to access the notes page.
+3. You'll land on the homepage with a link to the notes page. Click on "Notes" to access the notes page.
 <br>
-On the notes page, you can create new notes, view existing notes, and delete notes.
+4. On the notes page, you can create new notes, view existing notes, and delete notes.
 To create a new note, click on the "Write" icon, enter a title and text, and click the "Save" icon.
 <br>
-To view an existing note, click on the note in the left-hand column.
+5. To view an existing note, click on the note in the left-hand column.
 To delete a note, click on the trash icon next to the note in the left-hand column.
 
 # License 
