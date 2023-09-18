@@ -33,3 +33,24 @@ app.get('/api/notes', (req, res) => {
     });
 });
 
+// Route to recieve a new note, add it to db.json and return the new note 
+
+app.post('/api/notes', (req, res) => {
+    fs.readFile('db/db.json', 'utf8', (err, data) => {
+        if (err) throw err; 
+        const notes = JSON.parse(data);
+
+        const newNote = {
+            id: uuidv4(), 
+            title: req.body.title, 
+            text: req.body.text, 
+        };
+
+        notes.push(newNote);
+
+        fs.writeFile('db/db.json', JSON.stringify(notes), (err) => {
+            if (err) throw err; 
+            res.json(newNote); 
+        });
+    });
+});
